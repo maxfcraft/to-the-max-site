@@ -808,6 +808,211 @@ a { color: inherit; }
 
 .case-facts .v { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
 
+/* ---------- expect page: the simulated lead feed ---------- */
+
+.hero-sub-solo { margin-top: clamp(1.5rem, 3.5vh, 2.5rem); max-width: var(--measure); }
+.hero-sub-solo p { color: var(--ink-soft); font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
+
+.scroll-hint {
+  margin-top: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint) !important;
+}
+
+.inline-link { color: var(--ink); text-decoration: underline; text-underline-offset: 0.25em; }
+.inline-link-ink { color: var(--paper-on-ink); text-decoration: underline; text-underline-offset: 0.25em; }
+
+.act { padding-bottom: clamp(2rem, 6vh, 4rem); }
+
+.feed-scroll {
+  position: relative;
+  height: 340vh;
+}
+
+.feed-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.9rem, 2vh, 1.5rem);
+  padding: 1.25rem var(--gutter);
+  overflow: hidden;
+}
+
+.feed-head { text-align: center; }
+
+.feed-head .num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  color: var(--faint-on-ink);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.feed-head h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4.5vw, 3rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.feed-counters {
+  display: flex;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  align-items: baseline;
+}
+
+.feed-stat { text-align: center; }
+
+.feed-stat-value {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  display: block;
+}
+
+.feed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint-on-ink);
+  margin-top: 0.4rem;
+  display: block;
+}
+
+.phone {
+  width: min(420px, 100%);
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 52vh;
+  border: 1px solid var(--hairline-on-ink);
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.phone-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint-on-ink);
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--hairline-on-ink);
+  margin-bottom: 0.7rem;
+}
+
+.pulse {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--paper-on-ink);
+  margin-right: 0.5rem;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+.phone-feed {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.phone-feed::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3.5rem;
+  background: linear-gradient(to bottom, rgba(20,20,18,0), var(--ink));
+  pointer-events: none;
+}
+
+.feed-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.55rem;
+}
+
+.fc-main { font-size: 0.88rem; font-weight: 600; line-height: 1.35; }
+
+.fc-meta {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 400;
+  margin-top: 0.15rem;
+}
+
+.fc-side {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* hidden until scrolled to, only when JS runs */
+.js .feed-card {
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: opacity 0.45s var(--ease-lux), transform 0.45s var(--ease-lux),
+              max-height 0.45s var(--ease-lux), padding 0.45s var(--ease-lux),
+              margin 0.45s var(--ease-lux);
+}
+
+.js .feed-card.in {
+  opacity: 1;
+  transform: none;
+  max-height: 6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.55rem;
+}
+
+.feed-caption {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint-on-ink);
+  text-align: center;
+  max-width: 30em;
+}
+
 /* ---------- scroll reveal ---------- */
 
 /* hidden state only when JS is running (html.js), so no-JS and crawlers see everything */
@@ -834,4 +1039,14 @@ a { color: inherit; }
   .reveal-mask > span { animation: none; transform: none; }
   .js .fade-item { opacity: 1; transform: none; transition: none; }
   .orbit-arm, .orbit-chip { animation: none; }
+  .pulse { animation: none; }
+  .js .feed-card {
+    opacity: 1;
+    transform: none;
+    max-height: 6rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.55rem;
+    transition: none;
+  }
 }
