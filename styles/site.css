@@ -159,7 +159,9 @@ a { color: inherit; }
 /* ---------- hero ---------- */
 
 .hero {
-  padding-top: clamp(4rem, 12vh, 8rem);
+  /* 12vh under a sticky masthead reads as a void on a laptop, not as air.
+     Tightened 2026-09-16 so the eyebrow rule sits just under the bar. */
+  padding-top: clamp(1.75rem, 4vh, 3.25rem);
   padding-bottom: clamp(3rem, 8vh, 6rem);
 }
 
