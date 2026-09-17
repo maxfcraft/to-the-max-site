@@ -198,11 +198,13 @@ a { color: inherit; }
 
 @media (min-width: 52rem) {
   .hero-grid {
-    grid-template-columns: 1.15fr 0.85fr;
+    /* the copy column carries a 17-character first line now, so it takes more
+       of the row. The orbit dial is decorative and already overflows its box. */
+    grid-template-columns: 1.3fr 0.7fr;
     gap: 3rem;
     align-items: end;
   }
-  .hero h1 { font-size: clamp(2.6rem, 6.4vw, 5.4rem); }
+  .hero h1 { font-size: clamp(2.6rem, 5.1vw, 4.4rem); }
 }
 
 .hero-copy p {
@@ -1266,6 +1268,6 @@ a { color: inherit; }
    dissolve instead: the chip fades out as it swings past and fades back in. */
 
 .hero-visual {
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16%, #000 84%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 16%, #000 84%, transparent 100%);
 }
