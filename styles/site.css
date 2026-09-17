@@ -1257,3 +1257,12 @@ a { color: inherit; }
 @media (max-width: 51.99rem) {
   .orbit-chip { font-size: 0.55rem; padding: 0.38rem 0.6rem; letter-spacing: 0.14em; }
 }
+
+/* Chips at the horizontal extremes used to get guillotined by the overflow
+   clip. With 21 of them that reads as a bug rather than a frame, so the edges
+   dissolve instead: the chip fades out as it swings past and fades back in. */
+
+.hero-visual {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+}
