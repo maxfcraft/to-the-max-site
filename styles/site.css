@@ -1050,3 +1050,210 @@ a { color: inherit; }
     transition: none;
   }
 }
+
+/* ============================================================
+   MACHINE LAYER PASS, 2026-09-16.
+   Components for the industry pages, the visible FAQ that replaced
+   the old hidden SEO block, and the breadcrumb trail.
+   Same DNA: hairlines, zero radius, mono eyebrows, warm paper.
+   ============================================================ */
+
+/* ---------- breadcrumbs ---------- */
+
+.crumbs {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: clamp(1.5rem, 4vh, 2.5rem);
+}
+.crumbs a { color: var(--ink-faint); text-decoration: none; }
+.crumbs a:hover, .crumbs a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 0.25em; }
+.crumbs [aria-current="page"] { color: var(--ink); }
+
+/* ---------- sub-page hero ---------- */
+
+.hero-sub {
+  padding-top: clamp(2rem, 7vh, 4.5rem);
+  padding-bottom: clamp(2rem, 6vh, 4rem);
+  border-bottom: 1px solid var(--hairline);
+}
+.hero-sub h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 5.4vw, 3.9rem);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  max-width: 16em;
+  margin-top: 1.2rem;
+}
+.hero-sub .hero-actions { margin-top: clamp(1.8rem, 4vh, 2.6rem); }
+
+.hero-sub-solo,
+.hero-sub-solo p {
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  max-width: var(--measure);
+}
+.hero-sub-solo { margin-top: clamp(1.2rem, 3vh, 2rem); }
+
+/* ---------- dark step list (the build section) ---------- */
+
+.steps-ink .step { border-top-color: var(--hairline-on-ink); }
+.steps-ink .step:last-child { border-bottom-color: var(--hairline-on-ink); }
+.steps-ink .step::before { color: var(--faint-on-ink); }
+.steps-ink .step p { color: var(--paper-on-ink); max-width: var(--measure); }
+
+.prose-ink p, .prose-ink li { color: var(--paper-on-ink); }
+.prose-ink strong { color: var(--paper-on-ink); }
+
+/* ---------- the maths rows ---------- */
+
+.mathrows { display: grid; }
+
+.mathrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem 2rem;
+  padding: 1.05rem 0;
+  border-top: 1px solid var(--hairline);
+}
+.mathrow:last-child { border-bottom: 1px solid var(--hairline); }
+
+.mathrow dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.mathrow dd {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  margin-left: auto;
+}
+
+.math-note {
+  margin-top: 1.6rem;
+  max-width: var(--measure);
+  color: var(--ink-faint);
+  font-size: 0.95rem;
+}
+
+/* ---------- questions (visible, extractable, never hidden) ---------- */
+
+.faq { display: grid; }
+
+.faq-item {
+  padding: clamp(1.4rem, 3vh, 2rem) 0;
+  border-top: 1px solid var(--hairline);
+}
+.faq-item:last-child { border-bottom: 1px solid var(--hairline); }
+
+.faq-q {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.8vw, 1.75rem);
+  line-height: 1.18;
+  margin-bottom: 0.7rem;
+  max-width: 24em;
+  text-wrap: balance;
+}
+
+.faq-a {
+  color: var(--ink-soft);
+  max-width: var(--measure);
+}
+
+.on-ink .faq-item { border-top-color: var(--hairline-on-ink); }
+.on-ink .faq-item:last-child { border-bottom-color: var(--hairline-on-ink); }
+.on-ink .faq-a { color: var(--paper-on-ink); }
+
+/* ---------- the industry grid ---------- */
+
+.niche-grid {
+  list-style: none;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--hairline);
+}
+
+@media (min-width: 40rem) {
+  .niche-grid { grid-template-columns: 1fr 1fr; }
+  .niche-grid .niche-card:nth-child(odd) { border-right: 1px solid var(--hairline); }
+}
+@media (min-width: 64rem) {
+  .niche-grid-wide { grid-template-columns: 1fr 1fr 1fr; }
+  .niche-grid-wide .niche-card:nth-child(odd) { border-right: 0; }
+  .niche-grid-wide .niche-card { border-right: 1px solid var(--hairline); }
+  .niche-grid-wide .niche-card:nth-child(3n) { border-right: 0; }
+}
+
+.niche-card { border-bottom: 1px solid var(--hairline); }
+
+.niche-card a {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1.35rem 1.4rem 1.35rem 0;
+  text-decoration: none;
+  min-height: 44px;
+  transition: background 0.35s var(--ease-lux), padding-left 0.35s var(--ease-lux);
+}
+.niche-card a:hover, .niche-card a:focus-visible {
+  background: var(--paper-dim);
+  padding-left: 1rem;
+}
+
+.niche-card-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.niche-card-desc {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  line-height: 1.5;
+}
+
+/* ---------- footer town line ---------- */
+
+.footer-towns {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--hairline);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  max-width: 60em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .niche-card a { transition: none; }
+}
+
+/* ---------- denser orbit dial (2026-09-16) ----------
+   21 service chips instead of 6. Half of them are large-screen only, so the
+   phone keeps breathing room and the desktop gets the full machine. */
+
+.orbit-chip-lg { display: none; }
+
+@media (min-width: 52rem) {
+  .orbit-chip-lg { display: block; }
+  .orbit-chip { font-size: 0.58rem; padding: 0.42rem 0.7rem; }
+}
+
+@media (max-width: 51.99rem) {
+  .orbit-chip { font-size: 0.55rem; padding: 0.38rem 0.6rem; letter-spacing: 0.14em; }
+}
