@@ -362,6 +362,7 @@ a { color: inherit; }
 }
 .reveal-mask:nth-child(2) > span { animation-delay: 0.12s; }
 .reveal-mask:nth-child(3) > span { animation-delay: 0.24s; }
+.reveal-mask:nth-child(4) > span { animation-delay: 0.36s; }
 
 @keyframes maskUp { to { transform: translateY(0); } }
 
