@@ -44,6 +44,9 @@ export const site = {
   towns: [
     "Huntsville", "Madison", "Athens", "Decatur", "Meridianville",
     "Harvest", "Hazel Green", "Owens Cross Roads", "New Market", "Gurley",
+    /* Max studies at Auburn from fall 2026. Huntsville stays the home base
+       because the proof business is there; Auburn and Opelika are served too. */
+    "Auburn", "Opelika",
   ],
 };
 
