@@ -40,6 +40,17 @@ export function businessSchema() {
       ...site.towns.map((name) => ({ "@type": "City", name })),
       { "@type": "Country", name: "United States" },
     ],
+    /* Google looks for a logo before it will build a knowledge panel, and an
+       ImageObject with explicit dimensions is what it prefers over a bare URL. */
+    logo: {
+      "@type": "ImageObject",
+      url: url("img/logo-to-the-max.png"),
+      width: 1024,
+      height: 1024,
+      caption: site.name,
+    },
+    image: url("img/og-to-the-max.png"),
+    slogan: "More booked jobs. More money. Leave the marketing to me.",
     knowsAbout: [
       "Meta advertising",
       "Facebook advertising",
