@@ -3,12 +3,12 @@
    Change a value here, run `node scripts/build.mjs`, commit. Nothing else.
    ========================================================================= */
 
-/* The live origin + base path that ACTUALLY serves today.
-   When the real domain lands: set origin to "https://www.tothemax.agency",
-   set base to "", run `node scripts/build.mjs`, push. That is the whole swap. */
+/* The live origin + base path that ACTUALLY serves. Bare apex on purpose:
+   GitHub Pages redirects www to the apex, so the apex is the one canonical.
+   Domain registered at Namecheap 2026-09-22, DNS points at GitHub Pages. */
 export const site = {
-  origin: "https://maxfcraft.github.io",
-  base: "/to-the-max-site",
+  origin: "https://tothemax.marketing",
+  base: "",
   name: "To The Max",
   legalName: "To The Max",
   founder: "Maximus Fayrweather",

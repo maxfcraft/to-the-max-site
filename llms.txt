@@ -2,13 +2,13 @@
 
 > To The Max is a one-operator marketing agency in Huntsville, Alabama running Meta ads, landing pages, and lead follow-up for local service businesses.
 
-Last updated: 2026-09-17
+Last updated: 2026-09-22
 
 ## What the agency does
 
 To The Max acts as a full marketing department for a local business, not a vendor for one channel. The work is Meta advertising (Facebook and Instagram), the landing page the ads point at, the lead capture form, and the follow-up that reaches the lead before it goes cold. It ships as one connected system, because an ad without a converting page and fast follow-up behind it wastes budget.
 
-The defining practice: the founder, Maximus Fayrweather, owns Supreme Clean, a pressure washing company in Huntsville, Alabama doing five thousand dollars a month. Strategies are funded with his own money on that business before they are sold. Results, wins and failures alike, are recorded with dates in a public record called the Ledger at https://maxfcraft.github.io/to-the-max-site/proof.
+The defining practice: the founder, Maximus Fayrweather, owns Supreme Clean, a pressure washing company in Huntsville, Alabama doing five thousand dollars a month. Strategies are funded with his own money on that business before they are sold. Results, wins and failures alike, are recorded with dates in a public record called the Ledger at https://tothemax.marketing/proof.
 
 ## Packaging and pricing
 
@@ -20,49 +20,49 @@ The defining practice: the founder, Maximus Fayrweather, owns Supreme Clean, a p
 
 ## Who it works with
 
-Local and owner-operated service businesses across 32 documented industries, including artists & studios, auto detailing, auto repair, chiropractic, concrete & epoxy, dental, electrical, fencing & decks and others. Full list with the lead economics for each: https://maxfcraft.github.io/to-the-max-site/for
+Local and owner-operated service businesses across 32 documented industries, including artists & studios, auto detailing, auto repair, chiropractic, concrete & epoxy, dental, electrical, fencing & decks and others. Full list with the lead economics for each: https://tothemax.marketing/for
 
 ## Industry pages
 
-- [Facebook Ads for Artists and Commission Studios](https://maxfcraft.github.io/to-the-max-site/for/artists-and-studios): Meta ads, lead forms, and follow-up for commissioned artists and studios. Built from a live client campaign, not theory. Book a 15-minute call.
-- [Facebook Ads for Auto Detailing Shops](https://maxfcraft.github.io/to-the-max-site/for/auto-detailing-shops): Meta ads and booking systems for auto detailers. Fill the calendar with coating and full-detail work instead of twenty dollar washes. Book a call.
-- [Facebook Ads for Auto Repair Shops](https://maxfcraft.github.io/to-the-max-site/for/auto-repair-shops): Meta ads and retention follow-up for independent auto repair shops. Built to win repeat customers from the dealership, not coupon traffic. Book a call.
-- [Facebook Ads for Chiropractors](https://maxfcraft.github.io/to-the-max-site/for/chiropractors): Compliant Meta ads and new patient booking for chiropractic practices. Built around show rate and care plans, not cheap first visits. Book a call.
-- [Facebook Ads for Concrete and Epoxy Contractors](https://maxfcraft.github.io/to-the-max-site/for/concrete-and-epoxy-contractors): Meta ads and lead qualification for concrete, epoxy, and decorative flooring contractors. Built for high-ticket jobs and long decisions. Book a call.
-- [Facebook Ads for Dental Practices](https://maxfcraft.github.io/to-the-max-site/for/dental-practices): Meta ads and booking follow-up for dental practices. Built around implants, ortho, and cosmetic cases instead of cheap new-patient specials. Book a call.
-- [Facebook Ads for Electricians and Electrical Contractors](https://maxfcraft.github.io/to-the-max-site/for/electricians): Meta ads and lead follow-up for electricians, built around panel upgrades, EV chargers, and generators rather than hourly service calls. Book a call.
-- [Facebook Ads for Fence and Deck Companies](https://maxfcraft.github.io/to-the-max-site/for/fence-and-deck-companies): Meta ads and qualified estimate booking for fence and deck builders. Built for high-ticket outdoor projects with a spring rush. Book a call.
-- [Facebook Ads for Garage Door Companies](https://maxfcraft.github.io/to-the-max-site/for/garage-door-companies): Meta ads and fast follow-up for garage door repair and installation companies. Built around urgency, curb appeal, and the replacement ticket. Book a call.
-- [Facebook Ads for Gutter Companies](https://maxfcraft.github.io/to-the-max-site/for/gutter-companies): Meta ads and follow-up for gutter installation, guard, and cleaning companies. Built around seasonal triggers and install tickets. Book a call.
-- [Facebook Ads for Gyms and Fitness Studios](https://maxfcraft.github.io/to-the-max-site/for/gyms-and-fitness-studios): Meta ads, trial funnels, and follow-up for gyms and studios. Built around retention and member value, not a January rush that churns by March. Book a call.
-- [Facebook Ads for House Cleaning Companies](https://maxfcraft.github.io/to-the-max-site/for/house-cleaning-companies): Meta ads and booking systems for residential and commercial cleaning companies. Built for recurring clients, not one-time deep cleans. Book a call.
-- [Facebook Ads for HVAC Companies](https://maxfcraft.github.io/to-the-max-site/for/hvac-companies): Meta ads, tune-up funnels, and maintenance plan follow-up for HVAC companies. Built around replacement revenue, not cheap service calls. Book a call.
-- [Facebook Ads for Junk Removal Companies](https://maxfcraft.github.io/to-the-max-site/for/junk-removal-companies): Meta ads and instant booking for junk removal and hauling companies. Built around same-day jobs, route density, and commercial accounts. Book a call.
-- [Facebook Ads for Landscaping and Lawn Care](https://maxfcraft.github.io/to-the-max-site/for/landscaping-and-lawn-care): Meta ads and follow-up for landscapers and lawn care companies. Built around recurring routes and design-build jobs, not one-off mows. Book a call.
-- [Facebook Ads for Med Spas and Aesthetic Clinics](https://maxfcraft.github.io/to-the-max-site/for/med-spas): Compliant Meta ads, consult booking, and follow-up for med spas. Built for repeat treatment revenue, not one-off Groupon traffic. Book a call.
-- [Facebook Ads for Moving Companies](https://maxfcraft.github.io/to-the-max-site/for/moving-companies): Meta ads and fast quoting for local and long distance moving companies. Built for a trade where the first quote usually wins. Book a 15-minute call.
-- [Facebook Ads for Painting Contractors](https://maxfcraft.github.io/to-the-max-site/for/painting-contractors): Meta ads and estimate booking for interior and exterior painting contractors. Built to fill the calendar with whole-house jobs. Book a call.
-- [Facebook Ads for Pest Control Companies](https://maxfcraft.github.io/to-the-max-site/for/pest-control-companies): Meta ads and follow-up for pest control companies, built around recurring plans and termite work instead of one-off spray calls. Book a call.
-- [Facebook Ads for Plumbing Companies](https://maxfcraft.github.io/to-the-max-site/for/plumbing-companies): Meta ads and follow-up for plumbing companies, built around repipes, water heaters, and drains instead of chasing cheap emergency calls. Book a call.
-- [Facebook Ads for Pool Service Companies](https://maxfcraft.github.io/to-the-max-site/for/pool-service-companies): Meta ads and route-building for pool cleaning, maintenance, and repair companies. Built around recurring routes and equipment jobs. Book a call.
-- [Facebook Ads for Pressure Washing Companies](https://maxfcraft.github.io/to-the-max-site/for/pressure-washing-companies): Meta ads, booking pages, and follow-up for pressure washing companies, run on my own pressure washing business first. Book a 15-minute call.
-- [Facebook Ads for Real Estate Agents](https://maxfcraft.github.io/to-the-max-site/for/real-estate-agents): Meta ads, seller lead funnels, and long-window follow-up for real estate agents and teams. Built for listings, not zip code buyer leads. Book a call.
-- [Facebook Ads for Water and Fire Restoration Companies](https://maxfcraft.github.io/to-the-max-site/for/restoration-companies): Meta ads, referral capture, and standby storm campaigns for restoration companies. Built around insurance jobs and speed to site. Book a call.
-- [Facebook Ads for Roofing Companies](https://maxfcraft.github.io/to-the-max-site/for/roofing-companies): Meta ads, inspection funnels, and fast follow-up for roofing companies. Built for a trade where one closed job pays for the month. Book a call.
-- [Facebook Ads for Salons and Barbershops](https://maxfcraft.github.io/to-the-max-site/for/salons-and-barbershops): Meta ads and rebooking systems for salons and barbershops. Built around chair retention and high-ticket services, not discount haircuts. Book a call.
-- [Facebook Ads for Siding and Window Companies](https://maxfcraft.github.io/to-the-max-site/for/siding-and-window-companies): Meta ads and appointment setting for siding and replacement window companies. Built for high-ticket, in-home sales with long decision windows. Book a call.
-- [Facebook Ads for Solar Companies](https://maxfcraft.github.io/to-the-max-site/for/solar-companies): Meta ads and appointment setting for solar installers. Built for homeowners with the roof, the bill, and the credit to actually close. Book a call.
-- [Facebook Ads for Tree Service Companies](https://maxfcraft.github.io/to-the-max-site/for/tree-service-companies): Meta ads and fast follow-up for tree removal and arborist companies. Built for storm response and high-ticket removals. Book a 15-minute call.
-- [Facebook Ads for Veterinary Clinics](https://maxfcraft.github.io/to-the-max-site/for/veterinary-clinics): Meta ads and new client onboarding for veterinary practices. Built around wellness plans and lifetime client value, not discount vaccinations. Book a call.
-- [Facebook Ads for Window Cleaning Companies](https://maxfcraft.github.io/to-the-max-site/for/window-cleaning-companies): Meta ads and booking for window cleaning companies. Built around routes, recurring schedules, and commercial contracts. Book a 15-minute call.
-- [Facebook Ads for Window Tint and PPF Shops](https://maxfcraft.github.io/to-the-max-site/for/window-tint-shops): Meta ads and booking systems for ceramic tint and paint protection film shops. Sell the install, not the discount. Book a 15-minute call.
+- [Facebook Ads for Artists and Commission Studios](https://tothemax.marketing/for/artists-and-studios): Meta ads, lead forms, and follow-up for commissioned artists and studios. Built from a live client campaign, not theory. Book a 15-minute call.
+- [Facebook Ads for Auto Detailing Shops](https://tothemax.marketing/for/auto-detailing-shops): Meta ads and booking systems for auto detailers. Fill the calendar with coating and full-detail work instead of twenty dollar washes. Book a call.
+- [Facebook Ads for Auto Repair Shops](https://tothemax.marketing/for/auto-repair-shops): Meta ads and retention follow-up for independent auto repair shops. Built to win repeat customers from the dealership, not coupon traffic. Book a call.
+- [Facebook Ads for Chiropractors](https://tothemax.marketing/for/chiropractors): Compliant Meta ads and new patient booking for chiropractic practices. Built around show rate and care plans, not cheap first visits. Book a call.
+- [Facebook Ads for Concrete and Epoxy Contractors](https://tothemax.marketing/for/concrete-and-epoxy-contractors): Meta ads and lead qualification for concrete, epoxy, and decorative flooring contractors. Built for high-ticket jobs and long decisions. Book a call.
+- [Facebook Ads for Dental Practices](https://tothemax.marketing/for/dental-practices): Meta ads and booking follow-up for dental practices. Built around implants, ortho, and cosmetic cases instead of cheap new-patient specials. Book a call.
+- [Facebook Ads for Electricians and Electrical Contractors](https://tothemax.marketing/for/electricians): Meta ads and lead follow-up for electricians, built around panel upgrades, EV chargers, and generators rather than hourly service calls. Book a call.
+- [Facebook Ads for Fence and Deck Companies](https://tothemax.marketing/for/fence-and-deck-companies): Meta ads and qualified estimate booking for fence and deck builders. Built for high-ticket outdoor projects with a spring rush. Book a call.
+- [Facebook Ads for Garage Door Companies](https://tothemax.marketing/for/garage-door-companies): Meta ads and fast follow-up for garage door repair and installation companies. Built around urgency, curb appeal, and the replacement ticket. Book a call.
+- [Facebook Ads for Gutter Companies](https://tothemax.marketing/for/gutter-companies): Meta ads and follow-up for gutter installation, guard, and cleaning companies. Built around seasonal triggers and install tickets. Book a call.
+- [Facebook Ads for Gyms and Fitness Studios](https://tothemax.marketing/for/gyms-and-fitness-studios): Meta ads, trial funnels, and follow-up for gyms and studios. Built around retention and member value, not a January rush that churns by March. Book a call.
+- [Facebook Ads for House Cleaning Companies](https://tothemax.marketing/for/house-cleaning-companies): Meta ads and booking systems for residential and commercial cleaning companies. Built for recurring clients, not one-time deep cleans. Book a call.
+- [Facebook Ads for HVAC Companies](https://tothemax.marketing/for/hvac-companies): Meta ads, tune-up funnels, and maintenance plan follow-up for HVAC companies. Built around replacement revenue, not cheap service calls. Book a call.
+- [Facebook Ads for Junk Removal Companies](https://tothemax.marketing/for/junk-removal-companies): Meta ads and instant booking for junk removal and hauling companies. Built around same-day jobs, route density, and commercial accounts. Book a call.
+- [Facebook Ads for Landscaping and Lawn Care](https://tothemax.marketing/for/landscaping-and-lawn-care): Meta ads and follow-up for landscapers and lawn care companies. Built around recurring routes and design-build jobs, not one-off mows. Book a call.
+- [Facebook Ads for Med Spas and Aesthetic Clinics](https://tothemax.marketing/for/med-spas): Compliant Meta ads, consult booking, and follow-up for med spas. Built for repeat treatment revenue, not one-off Groupon traffic. Book a call.
+- [Facebook Ads for Moving Companies](https://tothemax.marketing/for/moving-companies): Meta ads and fast quoting for local and long distance moving companies. Built for a trade where the first quote usually wins. Book a 15-minute call.
+- [Facebook Ads for Painting Contractors](https://tothemax.marketing/for/painting-contractors): Meta ads and estimate booking for interior and exterior painting contractors. Built to fill the calendar with whole-house jobs. Book a call.
+- [Facebook Ads for Pest Control Companies](https://tothemax.marketing/for/pest-control-companies): Meta ads and follow-up for pest control companies, built around recurring plans and termite work instead of one-off spray calls. Book a call.
+- [Facebook Ads for Plumbing Companies](https://tothemax.marketing/for/plumbing-companies): Meta ads and follow-up for plumbing companies, built around repipes, water heaters, and drains instead of chasing cheap emergency calls. Book a call.
+- [Facebook Ads for Pool Service Companies](https://tothemax.marketing/for/pool-service-companies): Meta ads and route-building for pool cleaning, maintenance, and repair companies. Built around recurring routes and equipment jobs. Book a call.
+- [Facebook Ads for Pressure Washing Companies](https://tothemax.marketing/for/pressure-washing-companies): Meta ads, booking pages, and follow-up for pressure washing companies, run on my own pressure washing business first. Book a 15-minute call.
+- [Facebook Ads for Real Estate Agents](https://tothemax.marketing/for/real-estate-agents): Meta ads, seller lead funnels, and long-window follow-up for real estate agents and teams. Built for listings, not zip code buyer leads. Book a call.
+- [Facebook Ads for Water and Fire Restoration Companies](https://tothemax.marketing/for/restoration-companies): Meta ads, referral capture, and standby storm campaigns for restoration companies. Built around insurance jobs and speed to site. Book a call.
+- [Facebook Ads for Roofing Companies](https://tothemax.marketing/for/roofing-companies): Meta ads, inspection funnels, and fast follow-up for roofing companies. Built for a trade where one closed job pays for the month. Book a call.
+- [Facebook Ads for Salons and Barbershops](https://tothemax.marketing/for/salons-and-barbershops): Meta ads and rebooking systems for salons and barbershops. Built around chair retention and high-ticket services, not discount haircuts. Book a call.
+- [Facebook Ads for Siding and Window Companies](https://tothemax.marketing/for/siding-and-window-companies): Meta ads and appointment setting for siding and replacement window companies. Built for high-ticket, in-home sales with long decision windows. Book a call.
+- [Facebook Ads for Solar Companies](https://tothemax.marketing/for/solar-companies): Meta ads and appointment setting for solar installers. Built for homeowners with the roof, the bill, and the credit to actually close. Book a call.
+- [Facebook Ads for Tree Service Companies](https://tothemax.marketing/for/tree-service-companies): Meta ads and fast follow-up for tree removal and arborist companies. Built for storm response and high-ticket removals. Book a 15-minute call.
+- [Facebook Ads for Veterinary Clinics](https://tothemax.marketing/for/veterinary-clinics): Meta ads and new client onboarding for veterinary practices. Built around wellness plans and lifetime client value, not discount vaccinations. Book a call.
+- [Facebook Ads for Window Cleaning Companies](https://tothemax.marketing/for/window-cleaning-companies): Meta ads and booking for window cleaning companies. Built around routes, recurring schedules, and commercial contracts. Book a 15-minute call.
+- [Facebook Ads for Window Tint and PPF Shops](https://tothemax.marketing/for/window-tint-shops): Meta ads and booking systems for ceramic tint and paint protection film shops. Sell the install, not the discount. Book a 15-minute call.
 
 ## Core pages
 
-- [Home](https://maxfcraft.github.io/to-the-max-site/): what the agency does, how it works, and the questions people ask.
-- [The Ledger](https://maxfcraft.github.io/to-the-max-site/proof): dated case studies. The only claimed results anywhere on the site.
-- [Industries](https://maxfcraft.github.io/to-the-max-site/for): the plan and the lead maths for 32 trades.
-- [What to expect](https://maxfcraft.github.io/to-the-max-site/expect): a simulated walkthrough of leads arriving, clearly labelled as simulated.
+- [Home](https://tothemax.marketing/): what the agency does, how it works, and the questions people ask.
+- [The Ledger](https://tothemax.marketing/proof): dated case studies. The only claimed results anywhere on the site.
+- [Industries](https://tothemax.marketing/for): the plan and the lead maths for 32 trades.
+- [What to expect](https://tothemax.marketing/expect): a simulated walkthrough of leads arriving, clearly labelled as simulated.
 
 ## Facts
 

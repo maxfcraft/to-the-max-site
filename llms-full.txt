@@ -2,8 +2,8 @@
 
 > To The Max is a one-operator marketing agency in Huntsville, Alabama running Meta ads, landing pages, and lead follow-up for local service businesses.
 
-Last updated: 2026-09-17
-Source: https://maxfcraft.github.io/to-the-max-site/
+Last updated: 2026-09-22
+Source: https://tothemax.marketing/
 
 ===============================================================================
 ABOUT
@@ -43,7 +43,7 @@ INDUSTRIES (32)
 
 -------------------------------------------------------------------------------
 ARTISTS AND COMMISSION STUDIOS
-URL: https://maxfcraft.github.io/to-the-max-site/for/artists-and-studios
+URL: https://tothemax.marketing/for/artists-and-studios
 
 This is the one category on this site where a client campaign is already live and documented. Sophi Paints signed in July 2026 and had a full funnel and a Meta lead campaign running inside two weeks. The dates are in the Ledger.
 
@@ -82,7 +82,7 @@ A: Around occasions. Christmas, Mother's Day, graduations, weddings, and memoria
 
 -------------------------------------------------------------------------------
 AUTO DETAILING SHOPS
-URL: https://maxfcraft.github.io/to-the-max-site/for/auto-detailing-shops
+URL: https://tothemax.marketing/for/auto-detailing-shops
 
 Detailing has the most beautiful creative in local service and the worst offers. Everybody posts a satisfying paint correction clip. Almost nobody attaches a package, a price, and a bookable slot to it.
 
@@ -124,7 +124,7 @@ A: It is different math, not harder. Mobile has no location to draw people to, s
 
 -------------------------------------------------------------------------------
 AUTO REPAIR SHOPS
-URL: https://maxfcraft.github.io/to-the-max-site/for/auto-repair-shops
+URL: https://tothemax.marketing/for/auto-repair-shops
 
 An independent shop is not competing on price with the dealership. It is competing on trust with every other independent shop in a five mile radius, and the customer picks one and stays for a decade.
 
@@ -163,7 +163,7 @@ A: On trust and on the relationship, not on price. Named technicians, visible ce
 
 -------------------------------------------------------------------------------
 CHIROPRACTIC PRACTICES
-URL: https://maxfcraft.github.io/to-the-max-site/for/chiropractors
+URL: https://tothemax.marketing/for/chiropractors
 
 Chiropractic advertising lives or dies on one number almost nobody tracks: the percentage of booked new patients who actually walk through the door. Everything else is downstream of it.
 
@@ -202,7 +202,7 @@ A: Forty to one hundred and twenty dollars per booked appointment, judged alongs
 
 -------------------------------------------------------------------------------
 CONCRETE AND EPOXY FLOORING CONTRACTORS
-URL: https://maxfcraft.github.io/to-the-max-site/for/concrete-and-epoxy-contractors
+URL: https://tothemax.marketing/for/concrete-and-epoxy-contractors
 
 Concrete and epoxy sell the same way kitchens do: on a photograph and a price range. The contractors who win in the feed are the ones who show the finished floor and state the starting number.
 
@@ -244,7 +244,7 @@ A: It is usually the best part of the business. Warehouses, workshops, showrooms
 
 -------------------------------------------------------------------------------
 DENTAL PRACTICES
-URL: https://maxfcraft.github.io/to-the-max-site/for/dental-practices
+URL: https://tothemax.marketing/for/dental-practices
 
 A dental practice does not need more patients. It needs more of the right cases. Those are two completely different campaigns, and the cheap new-patient special usually buys the wrong one.
 
@@ -286,7 +286,7 @@ A: Reactivate dormant patients. Most practices have hundreds of people with unsc
 
 -------------------------------------------------------------------------------
 ELECTRICAL CONTRACTORS
-URL: https://maxfcraft.github.io/to-the-max-site/for/electricians
+URL: https://tothemax.marketing/for/electricians
 
 Electrical is the trade most often stuck selling hours. The companies that get out of that trap advertise projects instead: panels, generators, EV chargers, lighting. Same crew, same van, different business.
 
@@ -328,7 +328,7 @@ A: At least six weeks on project work. Panels and generators carry a two to eigh
 
 -------------------------------------------------------------------------------
 FENCE AND DECK BUILDERS
-URL: https://maxfcraft.github.io/to-the-max-site/for/fence-and-deck-companies
+URL: https://tothemax.marketing/for/fence-and-deck-companies
 
 Fences and decks are bought in the spring and decided in the winter. Companies that only advertise when the phone is already ringing are paying the highest possible price for work they would have got anyway.
 
@@ -367,7 +367,7 @@ A: A new dog, a new pool, a new baby, a new house, or a fence that finally came 
 
 -------------------------------------------------------------------------------
 GARAGE DOOR COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/garage-door-companies
+URL: https://tothemax.marketing/for/garage-door-companies
 
 A broken garage door is an emergency and a new garage door is a curb appeal purchase. They are opposite ends of the same business and they need opposite advertising.
 
@@ -406,7 +406,7 @@ A: As their own campaign. Smart openers, keypads, and battery backups are low-fr
 
 -------------------------------------------------------------------------------
 GUTTER INSTALLATION AND CLEANING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/gutter-companies
+URL: https://tothemax.marketing/for/gutter-companies
 
 Gutters are the most weather-triggered purchase in home services. The companies that win are not the ones with better ads, they are the ones already running when the first heavy rain hits.
 
@@ -445,7 +445,7 @@ A: No. A two hundred dollar cleaning lead and a three thousand dollar install le
 
 -------------------------------------------------------------------------------
 GYMS AND FITNESS STUDIOS
-URL: https://maxfcraft.github.io/to-the-max-site/for/gyms-and-fitness-studios
+URL: https://tothemax.marketing/for/gyms-and-fitness-studios
 
 A gym is a subscription business wearing a building. Every advertising decision should be made against what a member is worth over their whole stay, and almost none of them are.
 
@@ -487,7 +487,7 @@ A: Whichever one matches how you actually make money. A boutique studio sells th
 
 -------------------------------------------------------------------------------
 RESIDENTIAL AND COMMERCIAL CLEANING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/house-cleaning-companies
+URL: https://tothemax.marketing/for/house-cleaning-companies
 
 One deep clean is a job. A biweekly recurring client is a business. Everything about how a cleaning company advertises should be aimed at the second one, and most of it is aimed at the first.
 
@@ -529,7 +529,7 @@ A: Yes, and it is the most overlooked opportunity in the trade. Offices, medical
 
 -------------------------------------------------------------------------------
 HVAC COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/hvac-companies
+URL: https://tothemax.marketing/for/hvac-companies
 
 HVAC advertising is not really about the tune-up. It is about owning the relationship with a homeowner whose system is eight years old, so that when it dies in July you are the number they already have.
 
@@ -571,7 +571,7 @@ A: Separately, with monthly payment framing and a financing option stated up fro
 
 -------------------------------------------------------------------------------
 JUNK REMOVAL AND HAULING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/junk-removal-companies
+URL: https://tothemax.marketing/for/junk-removal-companies
 
 Junk removal is the closest thing in the trades to an impulse purchase. Somebody looks at a garage on a Saturday morning and decides today is the day, and the company that can be there this afternoon wins.
 
@@ -610,7 +610,7 @@ A: It is usually the better half of the business. Property managers, realtors ha
 
 -------------------------------------------------------------------------------
 LANDSCAPING AND LAWN CARE COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/landscaping-and-lawn-care
+URL: https://tothemax.marketing/for/landscaping-and-lawn-care
 
 There are two completely different businesses inside most landscaping companies: a recurring maintenance route, and design-build projects. They need different ads, different offers, and different definitions of a good lead.
 
@@ -652,7 +652,7 @@ A: Leaf removal and cleanups, holiday lighting where you offer it, hardscape and
 
 -------------------------------------------------------------------------------
 MED SPAS AND AESTHETIC CLINICS
-URL: https://maxfcraft.github.io/to-the-max-site/for/med-spas
+URL: https://tothemax.marketing/for/med-spas
 
 Med spa advertising is the most policy-restricted category a local business can run, and the most profitable when it is done inside the rules. The constraint is real. It is also why the operators who learn it have so little competition.
 
@@ -694,7 +694,7 @@ A: Not the way most spas want to. Direct before and after comparisons in the ad 
 
 -------------------------------------------------------------------------------
 MOVING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/moving-companies
+URL: https://tothemax.marketing/for/moving-companies
 
 Moving is a dated purchase with a hard deadline and near-total commoditisation. The customer has one day circled on a calendar, they will get three quotes, and the first honest one usually wins.
 
@@ -733,7 +733,7 @@ A: Corporate relocations, senior and downsizing moves, apartment turnovers, and 
 
 -------------------------------------------------------------------------------
 PAINTING CONTRACTORS
-URL: https://maxfcraft.github.io/to-the-max-site/for/painting-contractors
+URL: https://tothemax.marketing/for/painting-contractors
 
 Painting is a visual, high-ticket, seasonally swinging trade where the difference between a good year and a bad one is usually whether the schedule was booked before the season started.
 
@@ -772,7 +772,7 @@ A: The finished room or the finished house, in a property that resembles the cus
 
 -------------------------------------------------------------------------------
 PEST CONTROL COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/pest-control-companies
+URL: https://tothemax.marketing/for/pest-control-companies
 
 Pest control is one of the best recurring-revenue businesses in the trades and it is almost always advertised as a one-off spray. That single framing decision is what caps most of these companies.
 
@@ -814,7 +814,7 @@ A: Yes. The ticket is far larger, the urgency is higher, and the emotional trigg
 
 -------------------------------------------------------------------------------
 PLUMBING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/plumbing-companies
+URL: https://tothemax.marketing/for/plumbing-companies
 
 Most plumbing marketing advice is about ranking for emergency searches. That is one narrow slice of the trade, it is the most expensive slice, and it is the one where the customer never calls you again.
 
@@ -856,7 +856,7 @@ A: Contact every past customer. Most plumbing companies have hundreds of people 
 
 -------------------------------------------------------------------------------
 POOL SERVICE AND MAINTENANCE COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/pool-service-companies
+URL: https://tothemax.marketing/for/pool-service-companies
 
 A pool service company is a route business. The value of a new customer is not the first clean, it is the number of years they stay on your route, and every advertising decision should follow from that.
 
@@ -895,7 +895,7 @@ A: It decides whether the work is profitable at all. A customer twenty minutes o
 
 -------------------------------------------------------------------------------
 PRESSURE WASHING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/pressure-washing-companies
+URL: https://tothemax.marketing/for/pressure-washing-companies
 
 I own Supreme Clean, a pressure washing company in Huntsville doing five thousand dollars a month. Every ad I would run for you, I have already paid for myself. This is the one page on this site where I am not describing a client's business. I am describing mine.
 
@@ -937,7 +937,7 @@ A: Not dead, different. Residential demand drops and commercial demand does not.
 
 -------------------------------------------------------------------------------
 REAL ESTATE AGENTS AND TEAMS
-URL: https://maxfcraft.github.io/to-the-max-site/for/real-estate-agents
+URL: https://tothemax.marketing/for/real-estate-agents
 
 Most agents buy buyer leads because they are cheap. Listings are where the business is, and seller leads are harder to get, slower to convert, and worth several times as much.
 
@@ -976,7 +976,7 @@ A: Six to twelve months, with real content rather than a check-in every week. Se
 
 -------------------------------------------------------------------------------
 WATER, FIRE, AND MOLD RESTORATION COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/restoration-companies
+URL: https://tothemax.marketing/for/restoration-companies
 
 Restoration is won in the first hour and sold through other people. The homeowner in a flooded basement calls whoever they were told to call, which means the advertising has two jobs: be first, and be the name the plumber already said.
 
@@ -1015,7 +1015,7 @@ A: By keeping the account warm year round. A campaign that has been running stea
 
 -------------------------------------------------------------------------------
 ROOFING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/roofing-companies
+URL: https://tothemax.marketing/for/roofing-companies
 
 Roofing has the best ad math in home services and the worst lead handling. A single job pays for a month of advertising, which means the whole game is speed to contact and an honest inspection offer, not clever creative.
 
@@ -1057,7 +1057,7 @@ A: Run the retail replacement and repair campaign the whole year, not just after
 
 -------------------------------------------------------------------------------
 SALONS AND BARBERSHOPS
-URL: https://maxfcraft.github.io/to-the-max-site/for/salons-and-barbershops
+URL: https://tothemax.marketing/for/salons-and-barbershops
 
 A salon does not have a traffic problem, it has a rebooking problem. A client who comes eight times a year is worth ten of a client who came once on a discount and never returned.
 
@@ -1096,7 +1096,7 @@ A: The stylists. Clients follow people, not premises, and a stylist's own work i
 
 -------------------------------------------------------------------------------
 SIDING AND REPLACEMENT WINDOW COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/siding-and-window-companies
+URL: https://tothemax.marketing/for/siding-and-window-companies
 
 Siding and windows are sold in the living room, not in the feed. The only job the advertising has is to produce an in-home appointment with both decision makers present, and that is a much narrower target than a lead.
 
@@ -1135,7 +1135,7 @@ A: Four to twelve weeks is normal, and it can be longer. That is why follow-up m
 
 -------------------------------------------------------------------------------
 SOLAR INSTALLATION COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/solar-companies
+URL: https://tothemax.marketing/for/solar-companies
 
 Solar has the worst lead quality problem in local advertising. Anyone can fill in a form. Very few of those people own a suitable roof, pay a large enough bill, and can qualify for financing, and everything comes down to filtering for all three.
 
@@ -1174,7 +1174,7 @@ A: Because the offer is attractive to almost everyone and installable for a mino
 
 -------------------------------------------------------------------------------
 TREE SERVICE AND ARBORIST COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/tree-service-companies
+URL: https://tothemax.marketing/for/tree-service-companies
 
 Tree work is two businesses in one truck: planned trimming, which is steady and cheap to advertise, and emergency removal, which is enormous, unpredictable, and won entirely on speed.
 
@@ -1213,7 +1213,7 @@ A: Whether you are insured and whether your crew will drop a limb through the ro
 
 -------------------------------------------------------------------------------
 VETERINARY CLINICS
-URL: https://maxfcraft.github.io/to-the-max-site/for/veterinary-clinics
+URL: https://tothemax.marketing/for/veterinary-clinics
 
 A new veterinary client is not a visit. It is ten to fifteen years of an animal's life, which makes it one of the highest lifetime values in any local business, and almost nobody advertises like it.
 
@@ -1252,7 +1252,7 @@ A: Rarely. Discounted vaccinations attract price-driven clients in a category wh
 
 -------------------------------------------------------------------------------
 WINDOW CLEANING COMPANIES
-URL: https://maxfcraft.github.io/to-the-max-site/for/window-cleaning-companies
+URL: https://tothemax.marketing/for/window-cleaning-companies
 
 Window cleaning has the tightest margins and the best recurring structure in exterior services. Whether it is a good business or a hard one comes down to route density and whether the customer is on a schedule.
 
@@ -1291,7 +1291,7 @@ A: Gutter cleaning, screen repair, and a house wash. The truck is already there 
 
 -------------------------------------------------------------------------------
 WINDOW TINT AND PAINT PROTECTION SHOPS
-URL: https://maxfcraft.github.io/to-the-max-site/for/window-tint-shops
+URL: https://tothemax.marketing/for/window-tint-shops
 
 Tint is one of the few local trades where the customer already knows what they want before they search. They are not deciding whether to tint. They are deciding whose bay their car sits in. That changes what the ad has to do.
 
@@ -1339,4 +1339,4 @@ Maximus Fayrweather, founder and sole operator, To The Max.
 Phone and text: +1-281-908-4874
 Email: maxfcraft@gmail.com
 Location: Huntsville, Alabama, United States
-Website: https://maxfcraft.github.io/to-the-max-site/
+Website: https://tothemax.marketing/

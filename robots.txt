@@ -48,4 +48,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://maxfcraft.github.io/to-the-max-site/sitemap.xml
+Sitemap: https://tothemax.marketing/sitemap.xml
