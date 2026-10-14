@@ -20,7 +20,7 @@ export function masthead(up, current) {
         ${link("proof", "Proof")}
         ${link("for/", "Industries")}
         ${link("expect", "Expect", " nav-hide-mobile")}
-        <a class="nav-cta" href="${up}#contact">Book a call</a>
+        <a class="nav-cta" href="${site.booking}" target="_blank" rel="noopener">Book a call</a>
       </nav>
     </div>
   </header>`;
@@ -47,6 +47,7 @@ export function footer(up) {
           <a href="${up}for/">Industries</a>
           <a href="${up}expect">Expect</a>
           <a href="${up}#contact">Contact</a>
+          <a href="${site.booking}" target="_blank" rel="noopener">Book a call</a>
         </div>
         <div class="footer-links">
           <a href="${up}privacy">Privacy</a>
@@ -70,12 +71,13 @@ export function closingCta(up, line) {
         <span class="eyebrow fade-item">Contact</span>
         <h2 class="fade-item">${esc(line)}</h2>
         <div class="closing-contact fade-item">
-          <a class="btn btn-solid" href="${SMS}">Text ${site.phoneDisplay}</a>
+          <a class="btn btn-solid" href="${site.booking}" target="_blank" rel="noopener">Book a 30-minute call</a>
+          <a class="btn btn-ghost" href="${SMS}">Text ${site.phoneDisplay}</a>
           <a class="btn btn-ghost" href="${TEL}">Call instead</a>
         </div>
         <div class="closing-lines fade-item">
           <span>Email &middot; <a href="mailto:${site.email}">${site.email}</a></span>
-          <span>Fifteen minutes, no pitch. If it is not a fit you get told on the call.</span>
+          <span>Thirty minutes, no pitch. If it is not a fit you get told on the call.</span>
         </div>
       </div>
     </section>`;
@@ -107,7 +109,7 @@ ${breadcrumbNav([["Home", ""], ["Industries", "for/"], [n.nav, "for/" + n.slug]]
       <h1>${esc(n.h1)}</h1>
       <p class="hero-sub-solo">${esc(n.lede)}</p>
       <div class="hero-actions">
-        <a class="btn btn-solid" href="#contact">Book a 15-minute call</a>
+        <a class="btn btn-solid" href="${site.booking}" target="_blank" rel="noopener">Book a 30-minute call</a>
         <a class="btn btn-ghost" href="${up}proof">See the ledger</a>
       </div>
     </section>
@@ -281,7 +283,7 @@ ${niches
       </div>
     </section>
 
-${closingCta(up, "Fifteen minutes, and you will know your numbers.")}
+${closingCta(up, "Thirty minutes, and you will know your numbers.")}
 
   </main>
 

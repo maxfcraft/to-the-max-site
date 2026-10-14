@@ -46,7 +46,7 @@ export const group5 = [
   nav: "Moving",
   trade: "moving companies",
   title: "Facebook Ads for Moving Companies",
-  description: "Meta ads and fast quoting for local and long distance moving companies. Built for a trade where the first quote usually wins. Book a 15-minute call.",
+  description: "Meta ads and fast quoting for local and long distance moving companies. Built for a trade where the first quote usually wins. Book a 30-minute call.",
   h1: "Marketing for local and long distance moving companies",
   lede: "Moving is a dated purchase with a hard deadline and near-total commoditisation. The customer has one day circled on a calendar, they will get three quotes, and the first honest one usually wins.",
   ogAlt: "To The Max marketing for moving companies",

@@ -15,6 +15,7 @@ export const site = {
   phone: "+1-281-908-4874",
   phoneDisplay: "281-908-4874",
   email: "maxfcraft@gmail.com",
+  booking: "https://calendar.app.google/D5XNxMNKYkgwMwDx9",
   city: "Huntsville",
   region: "AL",
   regionName: "Alabama",

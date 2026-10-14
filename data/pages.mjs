@@ -105,6 +105,6 @@ export const homeFaqs = [
   },
   {
     q: "How do I start?",
-    a: "Text or call 281-908-4874 for a fifteen minute conversation with no pitch in it. If the business is not a fit, you get told so on the call and pointed somewhere better. If it is, you get the plan in writing, including the budget and what a lead should cost you, before a dollar is spent.",
+    a: "Book a thirty minute call from any page on this site, or text or call 281-908-4874. There is no pitch in it. If the business is not a fit, you get told so on the call and pointed somewhere better. If it is, you get the plan in writing, including the budget and what a lead should cost you, before a dollar is spent.",
   },
 ];

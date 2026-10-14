@@ -286,7 +286,7 @@ export const group4 = [
   nav: "Artists & studios",
   trade: "artists and commission studios",
   title: "Facebook Ads for Artists and Commission Studios",
-  description: "Meta ads, lead forms, and follow-up for commissioned artists and studios. Built from a live client campaign, not theory. Book a 15-minute call.",
+  description: "Meta ads, lead forms, and follow-up for commissioned artists and studios. Built from a live client campaign, not theory. Book a 30-minute call.",
   h1: "Marketing for artists and commissioned studios",
   lede: "This is the one category on this site where a client campaign is already live and documented. Sophi Paints signed in July 2026 and had a full funnel and a Meta lead campaign running inside two weeks. The dates are in the Ledger.",
   ogAlt: "To The Max marketing for artists and commission studios",
