@@ -136,11 +136,37 @@ export function articleSchema(guide, canonical) {
     author: { "@id": url() + "#organization" },
     publisher: { "@id": url() + "#organization" },
     image: url("img/og-to-the-max.png"),
-    /* Thing, not SoftwareApplication: that type invites rich result checks
-       for price and rating, which a guide about someone else's tool cannot
-       and should not answer. */
-    about: { "@type": "Thing", name: `${guide.name}, by ${guide.maker}` },
+    /* A guide is about someone else's product: Thing, not SoftwareApplication,
+       because that type invites rich result checks for price and rating that
+       a guide cannot and should not answer. A tool page is about software we
+       made, so it points at its own SoftwareApplication block by @id. */
+    about: guide.kind === "tool"
+      ? { "@id": canonical + "#software" }
+      : { "@type": "Thing", name: `${guide.name}, by ${guide.maker}` },
     citation: guide.sources.map(([, href]) => href),
+  };
+}
+
+/** A Lab tool we built. Price 0, author is the one organization entity.
+    No aggregateRating or review: there is no public review source. */
+export function softwareSchema(guide, canonical) {
+  const sw = guide.software;
+  return {
+    "@type": "SoftwareApplication",
+    "@id": canonical + "#software",
+    name: guide.name,
+    description: guide.dek,
+    url: sw.url,
+    applicationCategory: sw.category,
+    operatingSystem: sw.os,
+    softwareVersion: sw.version,
+    license: sw.license,
+    isAccessibleForFree: true,
+    datePublished: guide.published,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    author: { "@id": url() + "#organization" },
+    publisher: { "@id": url() + "#organization" },
+    mainEntityOfPage: { "@id": canonical + "#webpage" },
   };
 }
 

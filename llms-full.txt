@@ -1332,15 +1332,59 @@ Q: Can a tint shop get commercial work from Facebook ads?
 A: Yes, and it is the most underpriced thing in the trade. Office buildings, storefronts, and homeowners with west-facing glass all buy film, and almost nobody is advertising to them. Same crew, same film, higher ticket, and an auction with far fewer bidders in it.
 
 ===============================================================================
-THE LAB: FIELD GUIDES TO NEW AI TOOLS (1)
+THE LAB: FIELD GUIDES AND FREE TOOLS (2)
 ===============================================================================
 
-Written from each maker's own documentation. Nothing here claims hands-on
-testing. Where the maker has not documented something, the guide says so.
+Field guides are written from each maker's own documentation and claim no
+hands-on testing. Where the maker has not documented something, the guide
+says so. Tools are things To The Max built and tested; each page says what
+was tested and what was not, and links the test results.
+
+-------------------------------------------------------------------------------
+HOME SERVICE OFFICE: A FREE CLAUDE PLUGIN FOR HOME SERVICE BUSINESSES
+URL: https://tothemax.marketing/lab/claude-plugin-home-service-business
+Kind: Free tool built and tested by To The Max. Get it: https://github.com/maxfcraft/home-service-office
+Published: 2026-11-21  Last tested: 2026-11-21
+
+Eleven Claude skills that do the office work of a small home service business from pasted text: estimates, follow-ups, review replies, invoices and weekly numbers.
+
+QUESTIONS
+Q: Is Home Service Office free?
+A: Yes. It is free and open source under the MIT license. There is no paid version, no account and no sign-up. You run it inside your own Claude account, so the only cost is the Claude plan you already pay for.
+
+Q: Do I need Claude Code, or does the normal Claude app work?
+A: Both. The plugin is skills only, and Anthropic's documentation says plugin skills work in chat on claude.ai and the desktop app, in Cowork, and in Claude Code. We tested it in Claude Code. The claude.ai and Cowork install follows Anthropic's documented steps and was not run by us there.
+
+Q: Which Claude plan do I need for this plugin?
+A: A paid one. Anthropic's help center says plugins are available on all paid plans: Pro, Max, Ultra, Team and Enterprise. On Team and Enterprise, an Owner can limit which marketplaces members are allowed to add. Every test we ran used the Sonnet model.
+
+Q: Does the plugin see my customer data?
+A: No. The plugin is written instructions and nothing else. It has no server, no scripts, no connectors and no analytics, and it makes no network calls. What you paste is handled by Claude under your own Claude account and Anthropic's terms, like anything else you type into Claude. We never see it.
+
+Q: Does it work for my trade?
+A: It was written for owner operators with 1 to 10 people in pressure washing, roofing, landscaping, HVAC, plumbing, cleaning, painting and pest control. The estimate writer carries separate rules for each of those eight trades. The test runs used pressure washing, roofing, HVAC, gutter and lawn jobs. Other trades get the same skills without trade specific rules.
+
+Q: How is this different from Anthropic's Claude for Small Business plugin?
+A: This one is narrower. It is built only for home service trades, and it works from text you paste in, with no connected accounts. For what Anthropic's plugin covers, read Anthropic's own listing.
+
+Q: Can I change the skills?
+A: Yes. Each skill is one plain text file called SKILL.md, and the MIT license lets you copy and change them. Fork the repository, edit the wording or the rules, and install your copy. On claude.ai you can also upload a zip of the folder with Add, then Upload plugin.
+
+Q: How do I report a problem with Home Service Office?
+A: Open an issue on the GitHub repository at github.com/maxfcraft/home-service-office/issues. Say which skill you used, what you pasted with customer names and numbers removed, and what came back.
+
+SOURCES
+- Home Service Office repository (GitHub): https://github.com/maxfcraft/home-service-office
+- Eval results, tests/EVAL-RESULTS.md (GitHub): https://github.com/maxfcraft/home-service-office/blob/main/tests/EVAL-RESULTS.md
+- Live test transcripts, tests/transcripts (GitHub): https://github.com/maxfcraft/home-service-office/tree/main/tests/transcripts
+- Install and manage plugins (Claude Code docs): https://code.claude.com/docs/en/discover-plugins
+- Plugins in claude.ai and Cowork (Claude docs): https://claude.com/docs/plugins/overview
+- Use plugins in Claude (Claude Help Center): https://support.claude.com/en/articles/13837440-use-plugins-in-claude
 
 -------------------------------------------------------------------------------
 HOW TO USE CHATGPT SPACE: A FIELD GUIDE FOR PLUS USERS
 URL: https://tothemax.marketing/lab/chatgpt-space
+Kind: Field guide, written from the maker's documentation
 Published: 2026-11-21  Last checked: 2026-11-21
 
 What Space is, how to build your first page, why a schedule written into a page does not run, and two free starter templates.

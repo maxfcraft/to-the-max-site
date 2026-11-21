@@ -46,13 +46,14 @@ export const pages = [
     type: "hub",
   },
   /* The Lab. Reached by sitemap, llms.txt and direct links, never the nav.
-     Guide pages carry `guide`, the slug of their entry in data/lab.mjs. */
+     Guide and tool pages carry `guide`, the slug of their entry in
+     data/lab.mjs, where `kind` says which of the two it is. */
   {
     file: "lab/index.html",
     path: "lab/",
-    title: "The Lab | Field Guides to New AI Tools | To The Max",
-    description: "Plain field guides to new AI tools, written the week they ship from the maker's own documentation. Dated, sourced, and corrected as things change.",
-    ogAlt: "The Lab, field guides to new AI tools from To The Max",
+    title: "The Lab | AI Field Guides and Free Tools | To The Max",
+    description: "Plain field guides to new AI tools from the maker's own documentation, and free tools we built and tested. Dated, sourced, and corrected as things change.",
+    ogAlt: "The Lab, field guides to new AI tools and free tools from To The Max",
     breadcrumb: [["Home", ""], ["Lab", "lab/"]],
     index: true,
     type: "lab-hub",
@@ -68,6 +69,18 @@ export const pages = [
     index: true,
     type: "guide",
     guide: "chatgpt-space",
+    published: "2026-11-21",
+  },
+  {
+    file: "lab/claude-plugin-home-service-business.html",
+    path: "lab/claude-plugin-home-service-business",
+    title: "Home Service Office: Free Claude Plugin for Contractors",
+    description: "A free, open source Claude plugin for roofers, pressure washers, landscapers, HVAC and plumbers. 11 skills, tested in Claude Code, install steps inside.",
+    ogAlt: "Home Service Office, a free Claude plugin for home service businesses",
+    breadcrumb: [["Home", ""], ["Lab", "lab/"], ["Home Service Office", "lab/claude-plugin-home-service-business"]],
+    index: true,
+    type: "guide",
+    guide: "claude-plugin-home-service-business",
     published: "2026-11-21",
   },
   {

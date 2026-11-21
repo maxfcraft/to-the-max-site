@@ -66,9 +66,10 @@ Local and owner-operated service businesses across 32 documented industries, inc
 
 ## The Lab
 
-Plain field guides to new AI tools, written the week each tool ships, from the maker's own documentation. Each guide is dated, lists its sources, and says plainly where the maker has not documented something. Hub: https://tothemax.marketing/lab/
+Two kinds of entry. Field guides to new AI tools, written the week each tool ships from the maker's own documentation: each is dated, lists its sources, and says plainly where the maker has not documented something. And free tools To The Max built, tested and published: each says exactly what was tested and what was not. Hub: https://tothemax.marketing/lab/
 
-- [How to use ChatGPT Space: a field guide for Plus users](https://tothemax.marketing/lab/chatgpt-space): What Space is, how to build your first page, why a schedule written into a page does not run, and two free starter templates. Last checked 2026-11-21.
+- [Home Service Office: a free Claude plugin for home service businesses](https://tothemax.marketing/lab/claude-plugin-home-service-business): Free tool, built and tested by To The Max. Eleven Claude skills that do the office work of a small home service business from pasted text: estimates, follow-ups, review replies, invoices and weekly numbers. Last tested 2026-11-21.
+- [How to use ChatGPT Space: a field guide for Plus users](https://tothemax.marketing/lab/chatgpt-space): Field guide. What Space is, how to build your first page, why a schedule written into a page does not run, and two free starter templates. Last checked 2026-11-21.
 
 ## Facts
 

@@ -20,13 +20,17 @@ import { fileURLToPath } from "node:url";
 import { site, url } from "../data/site.mjs";
 import { niches } from "../data/niches.mjs";
 import { pages } from "../data/pages.mjs";
+import { guideBySlug } from "../data/lab.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOCAL = process.argv.includes("--local");
 const VERBOSE = process.argv.includes("--verbose");
 
 const targets = [
-  ...pages.map((p) => ({ path: p.path, file: p.file, index: p.index, type: p.type })),
+  ...pages.map((p) => ({
+    path: p.path, file: p.file, index: p.index, type: p.type,
+    kind: p.guide ? guideBySlug.get(p.guide)?.kind : undefined,
+  })),
   ...niches.map((n) => ({ path: `for/${n.slug}`, file: `for/${n.slug}.html`, index: true })),
 ];
 
@@ -101,7 +105,21 @@ for (const t of targets) {
         if (art && (!art.headline || !art.datePublished || !art.dateModified || !art.author)) {
           bad.push("Article missing headline, dates or author");
         }
-        if (!/Last checked \d{1,2} [A-Z][a-z]+ \d{4}/.test(html)) bad.push("guide does not show its last checked date");
+        /* A guide shows when its sources were last read, a tool when we last tested it. */
+        const dated = t.kind === "tool" ? /Last tested \d{1,2} [A-Z][a-z]+ \d{4}/ : /Last checked \d{1,2} [A-Z][a-z]+ \d{4}/;
+        if (!dated.test(html)) bad.push(`${t.kind || "guide"} does not show its ${t.kind === "tool" ? "last tested" : "last checked"} date`);
+        /* A tool we built ships SoftwareApplication: free, authored by the
+           organization, and never with a rating or review. */
+        if (t.kind === "tool") {
+          const sw = g.find((b) => b["@type"] === "SoftwareApplication");
+          if (!sw) bad.push("tool schema missing SoftwareApplication");
+          else {
+            if (!sw.name || !sw.applicationCategory || !sw.operatingSystem || !sw.url) bad.push("SoftwareApplication missing name, category, OS or url");
+            if (!sw.offers || sw.offers.price !== "0") bad.push("SoftwareApplication offer is not price 0");
+            if (!sw.author || sw.author["@id"] !== url() + "#organization") bad.push("SoftwareApplication author is not the organization");
+            if (sw.aggregateRating || sw.review) bad.push("SoftwareApplication carries a rating or review");
+          }
+        }
       }
       if (t.type === "lab-hub" && !types.includes("ItemList")) bad.push("Lab hub schema missing ItemList");
       const biz = g.find((b) => [].concat(b["@type"]).includes("ProfessionalService"));

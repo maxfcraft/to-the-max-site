@@ -29,10 +29,10 @@ import { fileURLToPath } from "node:url";
 import { site, url } from "../data/site.mjs";
 import { niches, bySlug } from "../data/niches.mjs";
 import { pages, homeFaqs } from "../data/pages.mjs";
-import { guides, guideBySlug, humanDate } from "../data/lab.mjs";
+import { guides, guideBySlug, humanDate, provenanceLabel } from "../data/lab.mjs";
 import {
   headBlock, businessSchema, webPageSchema, breadcrumbSchema,
-  faqSchema, serviceSchema, websiteSchema, articleSchema, esc,
+  faqSchema, serviceSchema, websiteSchema, articleSchema, softwareSchema, esc,
 } from "./lib/render.mjs";
 import { nichePage, hubPage } from "./lib/templates.mjs";
 
@@ -98,9 +98,17 @@ for (const g of guides) {
   if (g.dek.length > 200) fail(`lab guide ${g.slug}: dek ${g.dek.length} chars`);
   if (/[\u2014\u2013]/.test(JSON.stringify(g))) fail(`lab guide ${g.slug}: contains an em or en dash`);
   for (const f of g.faqs) if (f.q.includes('"')) fail(`lab guide ${g.slug}: a question contains a double quote`);
-  /* The page must print the date its sources were last read, in words. */
-  if (fs.existsSync(path.join(ROOT, g.file)) && !read(g.file).includes(`Last checked ${humanDate(g.checked)}`)) {
-    fail(`${g.file}: does not show "Last checked ${humanDate(g.checked)}"`);
+  if (g.kind !== "guide" && g.kind !== "tool") fail(`lab entry ${g.slug}: kind must be "guide" or "tool"`);
+  if (g.kind === "tool") {
+    const sw = g.software || {};
+    for (const k of ["url", "version", "category", "os", "license"]) {
+      if (!sw[k]) fail(`lab tool ${g.slug}: software.${k} missing`);
+    }
+  }
+  /* The page must print, in words, the date its sources were last read
+     (guide) or the date we last tested it (tool). */
+  if (fs.existsSync(path.join(ROOT, g.file)) && !read(g.file).includes(provenanceLabel(g))) {
+    fail(`${g.file}: does not show "${provenanceLabel(g)}"`);
   }
 }
 if (site.entity.length > 155) fail(`entity sentence is ${site.entity.length} chars, will not fit a meta description`);
@@ -187,10 +195,11 @@ for (const p of pages) {
   const graph = [businessSchema(), websiteSchema(), webPageSchema(page, canonical), breadcrumbSchema(p.breadcrumb)];
   if (p.type === "home") graph.push(faqSchema(homeFaqs));
   if (guide) graph.push(articleSchema(guide, canonical), faqSchema(guide.faqs));
+  if (guide && guide.kind === "tool") graph.push(softwareSchema(guide, canonical));
   if (p.type === "lab-hub") {
     graph.push({
       "@type": "ItemList",
-      name: "Field guides in The Lab",
+      name: "Field guides and tools in The Lab",
       numberOfItems: guides.length,
       itemListElement: guides.map((g, i) => ({
         "@type": "ListItem",
@@ -426,9 +435,9 @@ ${niches.map((n) => `- [${n.title}](${url(`for/${n.slug}`)}): ${n.description}`)
 
 ## The Lab
 
-Plain field guides to new AI tools, written the week each tool ships, from the maker's own documentation. Each guide is dated, lists its sources, and says plainly where the maker has not documented something. Hub: ${url("lab/")}
+Two kinds of entry. Field guides to new AI tools, written the week each tool ships from the maker's own documentation: each is dated, lists its sources, and says plainly where the maker has not documented something. And free tools To The Max built, tested and published: each says exactly what was tested and what was not. Hub: ${url("lab/")}
 
-${guides.map((g) => `- [${g.headline}](${url(g.path)}): ${g.dek} Last checked ${g.checked}.`).join("\n")}
+${guides.map((g) => `- [${g.headline}](${url(g.path)}): ${g.kind === "tool" ? "Free tool, built and tested by To The Max." : "Field guide."} ${g.dek} ${g.kind === "tool" ? "Last tested" : "Last checked"} ${g.checked}.`).join("\n")}
 
 ## Facts
 
@@ -489,18 +498,21 @@ ${n.faqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join("\n\n")}
   )
   .join("\n")}
 ===============================================================================
-THE LAB: FIELD GUIDES TO NEW AI TOOLS (${guides.length})
+THE LAB: FIELD GUIDES AND FREE TOOLS (${guides.length})
 ===============================================================================
 
-Written from each maker's own documentation. Nothing here claims hands-on
-testing. Where the maker has not documented something, the guide says so.
+Field guides are written from each maker's own documentation and claim no
+hands-on testing. Where the maker has not documented something, the guide
+says so. Tools are things To The Max built and tested; each page says what
+was tested and what was not, and links the test results.
 
 ${guides
   .map(
     (g) => `-------------------------------------------------------------------------------
 ${g.headline.toUpperCase()}
 URL: ${url(g.path)}
-Published: ${g.published}  Last checked: ${g.checked}
+Kind: ${g.kind === "tool" ? `Free tool built and tested by To The Max. Get it: ${g.software.url}` : "Field guide, written from the maker's documentation"}
+Published: ${g.published}  ${g.kind === "tool" ? "Last tested" : "Last checked"}: ${g.checked}
 
 ${g.dek}
 

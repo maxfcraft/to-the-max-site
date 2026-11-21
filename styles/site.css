@@ -1566,6 +1566,49 @@ a { color: inherit; }
 
 .longform .faq-q { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
 
+/* ---------- tool pages (2026-11-21): skill list, worked examples ---------- */
+
+/* the phrase an owner types, set in the display face above the result */
+.lab-defs .lab-say {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+/* a copyblock whose text is preformatted (an estimate with a column layout):
+   keep the columns and scroll inside the block, never the page */
+.copyblock-wide pre { white-space: pre; overflow-wrap: normal; }
+
+/* the reply Claude gave, quoted under a hairline rail */
+.lab-reply {
+  border-left: 1px solid var(--hairline-strong);
+  padding-left: clamp(0.9rem, 2.5vw, 1.4rem);
+  margin: 1.5rem 0 0.5rem;
+}
+.lab-reply > .eyebrow { display: block; margin-bottom: 0.9rem; }
+.lab-reply p, .lab-reply li { color: var(--ink-soft); font-size: 0.98rem; margin-bottom: 0.7rem; }
+.lab-reply ul { padding-left: 1.2rem; margin-bottom: 0.9rem; }
+.lab-reply h4 {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 1.4rem 0 0.6rem;
+}
+.lab-trim {
+  font-family: var(--font-mono);
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint) !important;
+  line-height: 1.6;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .guide-link, .copy-btn { transition: none; }
 }
