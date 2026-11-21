@@ -29,9 +29,10 @@ import { fileURLToPath } from "node:url";
 import { site, url } from "../data/site.mjs";
 import { niches, bySlug } from "../data/niches.mjs";
 import { pages, homeFaqs } from "../data/pages.mjs";
+import { guides, guideBySlug, humanDate } from "../data/lab.mjs";
 import {
   headBlock, businessSchema, webPageSchema, breadcrumbSchema,
-  faqSchema, serviceSchema, websiteSchema, esc,
+  faqSchema, serviceSchema, websiteSchema, articleSchema, esc,
 } from "./lib/render.mjs";
 import { nichePage, hubPage } from "./lib/templates.mjs";
 
@@ -82,6 +83,25 @@ for (const n of niches) {
 for (const p of pages) {
   if (p.title.length > 62) fail(`${p.file}: title ${p.title.length} chars`);
   if (p.description && p.description.length > 155) fail(`${p.file}: description ${p.description.length} chars`);
+}
+/* The Lab. Stricter than the other pages: 60 is the ceiling the brief set. */
+for (const p of pages.filter((x) => x.type === "lab-hub" || x.type === "guide")) {
+  if (p.title.length > 60) fail(`${p.file}: title ${p.title.length} chars (max 60 for Lab pages)`);
+  if (p.type === "guide" && !guideBySlug.has(p.guide)) fail(`${p.file}: guide "${p.guide}" is not in data/lab.mjs`);
+}
+for (const g of guides) {
+  const p = pages.find((x) => x.guide === g.slug);
+  if (!p) fail(`lab guide ${g.slug}: no entry in data/pages.mjs`);
+  else if (p.file !== g.file || p.path !== g.path) fail(`lab guide ${g.slug}: file/path disagree with data/pages.mjs`);
+  if (g.faqs.length < 6 || g.faqs.length > 8) fail(`lab guide ${g.slug}: ${g.faqs.length} FAQs (want 6 to 8)`);
+  if (!g.sources.length) fail(`lab guide ${g.slug}: no sources`);
+  if (g.dek.length > 200) fail(`lab guide ${g.slug}: dek ${g.dek.length} chars`);
+  if (/[\u2014\u2013]/.test(JSON.stringify(g))) fail(`lab guide ${g.slug}: contains an em or en dash`);
+  for (const f of g.faqs) if (f.q.includes('"')) fail(`lab guide ${g.slug}: a question contains a double quote`);
+  /* The page must print the date its sources were last read, in words. */
+  if (fs.existsSync(path.join(ROOT, g.file)) && !read(g.file).includes(`Last checked ${humanDate(g.checked)}`)) {
+    fail(`${g.file}: does not show "Last checked ${humanDate(g.checked)}"`);
+  }
 }
 if (site.entity.length > 155) fail(`entity sentence is ${site.entity.length} chars, will not fit a meta description`);
 
@@ -159,9 +179,27 @@ for (const p of pages) {
     modified: lastmod(rel),
   };
   const canonical = url(p.path);
+  const guide = p.type === "guide" ? guideBySlug.get(p.guide) : null;
+  /* A guide's modified date is the day its sources were last re-read and the
+     copy corrected, not the day a cache stamp moved. */
+  if (guide) page.modified = guide.modified;
 
   const graph = [businessSchema(), websiteSchema(), webPageSchema(page, canonical), breadcrumbSchema(p.breadcrumb)];
   if (p.type === "home") graph.push(faqSchema(homeFaqs));
+  if (guide) graph.push(articleSchema(guide, canonical), faqSchema(guide.faqs));
+  if (p.type === "lab-hub") {
+    graph.push({
+      "@type": "ItemList",
+      name: "Field guides in The Lab",
+      numberOfItems: guides.length,
+      itemListElement: guides.map((g, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: g.headline,
+        url: url(g.path),
+      })),
+    });
+  }
 
   const block = `  <!-- ml:start -->\n${headBlock(page, graph)}\n  <!-- ml:end -->`;
   const hasMarkers = html.includes("<!-- ml:start -->");
@@ -193,6 +231,51 @@ ${homeFaqs
     </section>
     <!-- faq:end -->`;
     html = html.replace(/    <!-- faq:start -->[\s\S]*?<!-- faq:end -->/, section);
+  }
+
+  /* A guide's visible questions come from the same data/lab.mjs entry as its
+     FAQPage schema. Same rule as the home page: one source, no drift. */
+  if (guide && html.includes("<!-- faq:start -->")) {
+    const section = `        <!-- faq:start -->
+        <section class="lab-section" id="questions">
+          <span class="lab-num">Questions</span>
+          <h2>Questions people are asking about ${esc(guide.name)}</h2>
+          <div class="faq">
+${guide.faqs
+  .map(
+    (f) => `            <div class="faq-item">
+              <h3 class="faq-q">${esc(f.q)}</h3>
+              <p class="faq-a">${esc(f.a)}</p>
+            </div>`
+  )
+  .join("\n")}
+          </div>
+        </section>
+        <!-- faq:end -->`;
+    html = html.replace(/        <!-- faq:start -->[\s\S]*?<!-- faq:end -->/, section);
+  }
+
+  /* The hub's guide list, newest first, from data/lab.mjs. A new guide is a
+     new entry there, never a hand-copied row here. */
+  if (p.type === "lab-hub" && html.includes("<!-- guides:start -->")) {
+    const list = `        <!-- guides:start -->
+        <ul class="ledger guide-list">
+${[...guides]
+  .sort((a, b) => b.published.localeCompare(a.published))
+  .map(
+    (g) => `          <li class="ledger-row guide-row">
+            <span class="ledger-date">${esc(humanDate(g.published))}</span>
+            <div class="ledger-what">
+              <a class="guide-link" href="${g.slug}"><strong>${esc(g.name)}</strong></a>
+              <p>${esc(g.dek)}</p>
+            </div>
+            <span class="ledger-result">${esc(g.maker)} &middot; ${esc(g.plan)}</span>
+          </li>`
+  )
+  .join("\n")}
+        </ul>
+        <!-- guides:end -->`;
+    html = html.replace(/        <!-- guides:start -->[\s\S]*?<!-- guides:end -->/, list);
   }
 
   write(rel, html);
@@ -341,6 +424,12 @@ ${niches.map((n) => `- [${n.title}](${url(`for/${n.slug}`)}): ${n.description}`)
 - [Industries](${url("for")}): the plan and the lead maths for ${niches.length} trades.
 - [What to expect](${url("expect")}): a simulated walkthrough of leads arriving, clearly labelled as simulated.
 
+## The Lab
+
+Plain field guides to new AI tools, written the week each tool ships, from the maker's own documentation. Each guide is dated, lists its sources, and says plainly where the maker has not documented something. Hub: ${url("lab/")}
+
+${guides.map((g) => `- [${g.headline}](${url(g.path)}): ${g.dek} Last checked ${g.checked}.`).join("\n")}
+
 ## Facts
 
 - Founder and sole operator: ${site.founder}
@@ -396,6 +485,30 @@ Note: ${n.math.note}
 
 QUESTIONS
 ${n.faqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join("\n\n")}
+`
+  )
+  .join("\n")}
+===============================================================================
+THE LAB: FIELD GUIDES TO NEW AI TOOLS (${guides.length})
+===============================================================================
+
+Written from each maker's own documentation. Nothing here claims hands-on
+testing. Where the maker has not documented something, the guide says so.
+
+${guides
+  .map(
+    (g) => `-------------------------------------------------------------------------------
+${g.headline.toUpperCase()}
+URL: ${url(g.path)}
+Published: ${g.published}  Last checked: ${g.checked}
+
+${g.dek}
+
+QUESTIONS
+${g.faqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join("\n\n")}
+
+SOURCES
+${g.sources.map(([label, href]) => `- ${label}: ${href}`).join("\n")}
 `
   )
   .join("\n")}

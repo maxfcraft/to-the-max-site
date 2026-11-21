@@ -126,6 +126,34 @@
   update();
 })();
 
+/* Lab guides: copy buttons on template blocks. The buttons ship hidden and
+   only appear when the clipboard API is usable, so without JS (or on an
+   insecure origin) the block is plain selectable text and nothing is broken. */
+(function () {
+  var buttons = document.querySelectorAll(".copy-btn");
+  if (!buttons.length || !navigator.clipboard || !window.isSecureContext) return;
+
+  Array.prototype.forEach.call(buttons, function (btn) {
+    var block = btn.closest(".copyblock");
+    var code = block && block.querySelector("pre");
+    if (!code) return;
+    var label = btn.textContent;
+    var timer = null;
+    btn.setAttribute("aria-live", "polite");
+    btn.hidden = false;
+
+    btn.addEventListener("click", function () {
+      navigator.clipboard.writeText(code.textContent).then(
+        function () { btn.textContent = "Copied"; },
+        function () { btn.textContent = "Select and copy"; }
+      ).then(function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () { btn.textContent = label; }, 2200);
+      });
+    });
+  });
+})();
+
 (function () {
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var items = document.querySelectorAll(".fade-item");

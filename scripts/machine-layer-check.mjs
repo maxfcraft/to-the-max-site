@@ -26,7 +26,7 @@ const LOCAL = process.argv.includes("--local");
 const VERBOSE = process.argv.includes("--verbose");
 
 const targets = [
-  ...pages.map((p) => ({ path: p.path, file: p.file, index: p.index })),
+  ...pages.map((p) => ({ path: p.path, file: p.file, index: p.index, type: p.type })),
   ...niches.map((n) => ({ path: `for/${n.slug}`, file: `for/${n.slug}.html`, index: true })),
 ];
 
@@ -92,6 +92,18 @@ for (const t of targets) {
       for (const need of ["ProfessionalService", "WebSite", "WebPage", "BreadcrumbList"]) {
         if (!types.includes(need)) bad.push(`schema missing ${need}`);
       }
+      /* Lab guides ship an Article and their questions as FAQPage. */
+      if (t.type === "guide") {
+        for (const need of ["Article", "FAQPage"]) {
+          if (!types.includes(need)) bad.push(`guide schema missing ${need}`);
+        }
+        const art = g.find((b) => b["@type"] === "Article");
+        if (art && (!art.headline || !art.datePublished || !art.dateModified || !art.author)) {
+          bad.push("Article missing headline, dates or author");
+        }
+        if (!/Last checked \d{1,2} [A-Z][a-z]+ \d{4}/.test(html)) bad.push("guide does not show its last checked date");
+      }
+      if (t.type === "lab-hub" && !types.includes("ItemList")) bad.push("Lab hub schema missing ItemList");
       const biz = g.find((b) => [].concat(b["@type"]).includes("ProfessionalService"));
       if (biz && biz.description !== site.entity) bad.push("schema description is not the entity sentence");
       if (biz && biz.aggregateRating) bad.push("aggregateRating present with no public review source");

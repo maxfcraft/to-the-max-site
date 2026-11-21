@@ -45,6 +45,31 @@ export const pages = [
     index: true,
     type: "hub",
   },
+  /* The Lab. Reached by sitemap, llms.txt and direct links, never the nav.
+     Guide pages carry `guide`, the slug of their entry in data/lab.mjs. */
+  {
+    file: "lab/index.html",
+    path: "lab/",
+    title: "The Lab | Field Guides to New AI Tools | To The Max",
+    description: "Plain field guides to new AI tools, written the week they ship from the maker's own documentation. Dated, sourced, and corrected as things change.",
+    ogAlt: "The Lab, field guides to new AI tools from To The Max",
+    breadcrumb: [["Home", ""], ["Lab", "lab/"]],
+    index: true,
+    type: "lab-hub",
+    published: "2026-11-21",
+  },
+  {
+    file: "lab/chatgpt-space.html",
+    path: "lab/chatgpt-space",
+    title: "How to Use ChatGPT Space: Plus Guide and Templates",
+    description: "ChatGPT Space for Plus users: first steps, why a schedule written into a page never runs, what works instead, and two free copy and paste templates.",
+    ogAlt: "Field guide to ChatGPT Space for Plus users",
+    breadcrumb: [["Home", ""], ["Lab", "lab/"], ["ChatGPT Space", "lab/chatgpt-space"]],
+    index: true,
+    type: "guide",
+    guide: "chatgpt-space",
+    published: "2026-11-21",
+  },
   {
     file: "privacy.html",
     path: "privacy",

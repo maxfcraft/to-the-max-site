@@ -119,6 +119,31 @@ export function serviceSchema(niche, canonical) {
   };
 }
 
+/** A Lab field guide. Author and publisher are the one organization entity
+    every page already carries, referenced by @id so nothing is restated. */
+export function articleSchema(guide, canonical) {
+  return {
+    "@type": "Article",
+    "@id": canonical + "#article",
+    headline: guide.headline,
+    description: guide.dek,
+    url: canonical,
+    mainEntityOfPage: { "@id": canonical + "#webpage" },
+    isPartOf: { "@id": url() + "#website" },
+    inLanguage: "en-US",
+    datePublished: guide.published,
+    dateModified: guide.modified,
+    author: { "@id": url() + "#organization" },
+    publisher: { "@id": url() + "#organization" },
+    image: url("img/og-to-the-max.png"),
+    /* Thing, not SoftwareApplication: that type invites rich result checks
+       for price and rating, which a guide about someone else's tool cannot
+       and should not answer. */
+    about: { "@type": "Thing", name: `${guide.name}, by ${guide.maker}` },
+    citation: guide.sources.map(([, href]) => href),
+  };
+}
+
 export function websiteSchema() {
   return {
     "@type": "WebSite",
